@@ -1,0 +1,11 @@
+# requirements.txt
+crewai>=0.41.0
+crewai-tools>=0.4.0
+langchain-community>=0.0.10
+ib_insync>=0.9.86
+pandas>=2.0.0
+numpy>=1.24.0
+pytz>=2023.3
+pyyaml>=6.0
+ollama>=0.1.0
+nest-asyncio>=1.5.6

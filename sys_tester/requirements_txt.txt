@@ -1,0 +1,28 @@
+# Core trading system dependencies
+ib_insync>=0.9.86
+nest_asyncio>=1.5.8
+
+# Data processing
+pandas>=2.1.4
+numpy>=1.26.2
+
+# Time handling
+pytz>=2023.3.post1
+
+# CLI and display
+click>=8.1.7
+rich>=13.7.0
+
+# Optional but recommended for better performance
+numba>=0.58.1  # For faster numerical computations
+scipy>=1.11.4  # For statistical calculations
+
+# Development and testing (optional)
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+black>=23.12.0  # Code formatting (Ruff compatible)
+ruff>=0.1.8  # Linting
+
+# Visualization (optional, for future enhancements)
+matplotlib>=3.8.2
+plotly>=5.18.0

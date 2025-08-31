@@ -1,0 +1,16 @@
+{
+  "date": "2023-09-22",
+  "underlying": {
+    "status": "OK",
+    "from": "2023-09-22",
+    "symbol": "QQQ",
+    "open": 359.63,
+    "high": 361.8,
+    "low": 357.59,
+    "close": 357.91,
+    "volume": 51589689.0,
+    "afterHours": 358.23,
+    "preMarket": 358.93
+  },
+  "vix": {}
+}

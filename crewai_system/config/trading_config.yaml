@@ -1,0 +1,167 @@
+# crewai_system/config/trading_config.yaml
+# CrewAI Trading System Configuration - VETERAN 0DTE SETTINGS
+# =============================================================
+# Battle-tested values from 30 years of 0DTE trading
+# These aren't textbook - they're what actually works
+#
+# Author: Veteran 0DTE Trader
+# Version: 2.0 - Production Ready
+# Date: August 2025
+
+test_mode: False   # backtest/local mode
+# or
+# test_mode: false  # live mode
+
+# System Paths
+paths:
+  database: "crewai_system/memory/trades.db"
+  logs: "crewai_system/logs"
+  existing_modules: "../"
+
+# Ollama Configuration
+ollama:
+  model: "mixtral:8x7b-instruct-v0.1-q5_K_M"
+  base_url: "http://localhost:11434"
+  temperature: 0.3      # Low - we want consistency
+  max_tokens: 3000
+  timeout_seconds: 45   # Give it time to think
+  retry_attempts: 3
+  response_format: "json"
+
+# Add OpenAI configuration
+openai:
+  model: "gpt-4o-mini"  # Fast & cheap (or "gpt-3.5-turbo")
+  temperature: 0.3
+  max_tokens: 3000
+  timeout_seconds: 30  
+  retry_attempts: 3
+  response_format: "json"
+
+# Analysis Intervals (seconds) - Spain trading windows
+analysis_intervals:
+  market_open: 30       # First 30 min are chaos - check often
+  morning: 90          # Morning session 
+  midday: 120          # Lunch lull - less frequent
+  power_hour: 60       # Power hour needs attention
+  closing: 20          # Final 30 min - rapid checks
+  position_monitor: 10  # With positions - WATCH CLOSELY
+
+# Trading Constraints - REAL VALUES
+risk_limits:
+  max_daily_trades: 5          # Quality over quantity
+  max_concurrent_positions: 3   # Focus on what you can manage
+  max_contracts_per_trade: 10   # Start small, scale with wins
+  max_risk_per_trade_pct: 5.0   # 5% - standard for 0DTE
+  max_daily_loss_pct: 10.0      # 15% - stop and reassess
+  consecutive_loss_limit: 3     # 3 losses = market saying no
+  emergency_stop_loss_pct: 20.0 # Pull the plug at 20%
+
+# Strategy Parameters - REALISTIC 0DTE VALUES
+strategy_params:
+  wing_width_bounds:
+    min: 2              # 0DTE needs tight wings ($2)
+    max: 10             # Max $10 wide for liquidity
+    
+  credit_requirements:
+    iron_condor_min: 25    # $25 minimum - anything less isn't worth it
+    put_spread_min: 15     # $15 minimum for put spreads
+    call_spread_min: 15    # $15 minimum for call spreads
+    
+  strike_distance_bounds:
+    min_pct: 0.5        # At least 0.5% OTM for safety
+    max_pct: 1.5        # Max 1.5% OTM - further won't pay
+    
+  # New: VIX-based adjustments
+  vix_adjustments:
+    low_vix_threshold: 15      # Below 15 = dangerous
+    high_vix_threshold: 25     # Above 25 = opportunity
+    size_reduction_low_vix: 0.5  # Half size when VIX < 15
+    size_increase_high_vix: 1.5  # 1.5x size when VIX > 25
+
+# Agent Configuration  
+agents:
+  memory_lookback_trades: 20    # Look at last 20 trades
+  confidence_threshold: 65      # Need 65% confidence minimum
+  
+  reasoning_detail: "significant"
+  
+  # Realistic timeouts for complex decisions
+  decision_timeouts:
+    market_analysis: 30         # Don't rush analysis
+    strategy_selection: 30      # Strategy needs thought
+    risk_assessment: 20         # Risk check is critical
+    execution_decision: 10      # Quick but not rushed
+    chief_trading_officer: 45   # CTO needs time to think
+
+# CrewAI Settings - PRODUCTION
+crew:
+  verbose: true         # Always see what's happening
+  memory: true         
+  cache: true          
+  max_iterations: 5     # Give agents room to work
+  parallel_execution: false  # Sequential for safety
+
+# Position Management - CRITICAL FOR 0DTE
+position_management:
+  stop_loss_pct: 50           # 50% loss = exit
+  profit_target_pct: 25       # 25% profit = consider exit
+  time_stop_minutes: 30       # Exit 30 min before close
+  
+  # Delta thresholds for adjustment
+  delta_thresholds:
+    adjustment_trigger: 25     # Adjust if short delta > 25
+    emergency_exit: 35        # Exit if short delta > 35
+    
+  # Time-based sizing
+  time_based_sizing:
+    morning_multiplier: 1.0    # Full size morning
+    midday_multiplier: 0.7     # Reduce midday
+    power_hour_multiplier: 0.5 # Half size power hour
+    final_30_min: 0           # No new trades final 30
+
+# Market Conditions - When to trade/not trade
+market_conditions:
+  avoid_trading:
+    - "FOMC_day"
+    - "NFP_morning"
+    - "CPI_release"
+    - "OpEx_friday_afternoon"
+    - "VIX_above_30"
+    - "First_5_minutes"
+    - "Last_10_minutes"
+    
+  favorable_conditions:
+    - "VIX_15_to_22"
+    - "Range_bound_day"
+    - "Post_spike_recovery"
+    - "Theta_burn_afternoon"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(name)s | %(levelname)s | %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  
+  separate_logs:
+    agents: true
+    tools: true
+    trades: true
+    errors: true
+    
+# Account Settings (adjust to your account)
+account:
+  starting_capital: 25000      # PDT minimum
+  max_allocation_pct: 30       # Never use more than 30%
+  reserve_cash: 5000           # Always keep reserve
+
+# CRITICAL OVERRIDES - Safety switches
+emergency_overrides:
+  kill_switch: false           # Set true to stop all trading
+  reduce_size_mode: false      # Set true to trade minimum size
+  paper_only: false           # Set true for paper trading only
+  
+# Performance Tracking
+performance:
+  target_win_rate: 65          # Aim for 65% wins
+  target_profit_factor: 1.5    # 1.5x profit factor minimum
+  review_after_trades: 20      # Review strategy every 20 trades

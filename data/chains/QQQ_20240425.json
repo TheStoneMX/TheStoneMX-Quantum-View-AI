@@ -1,0 +1,272 @@
+[
+  {
+    "strike": 380.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 41.57,
+    "ask": 41.57,
+    "mid": 41.57,
+    "volume": 1,
+    "open_interest": 0
+  },
+  {
+    "strike": 380.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 2,
+    "open_interest": 0
+  },
+  {
+    "strike": 385.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 38.01,
+    "ask": 38.01,
+    "mid": 38.01,
+    "volume": 7,
+    "open_interest": 0
+  },
+  {
+    "strike": 385.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 2,
+    "open_interest": 0
+  },
+  {
+    "strike": 390.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 30.62,
+    "ask": 30.58,
+    "mid": 30.6,
+    "volume": 5,
+    "open_interest": 0
+  },
+  {
+    "strike": 395.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 23.35,
+    "ask": 27.9,
+    "mid": 25.625,
+    "volume": 8,
+    "open_interest": 0
+  },
+  {
+    "strike": 395.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 35,
+    "open_interest": 0
+  },
+  {
+    "strike": 400.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 18.57,
+    "ask": 21.67,
+    "mid": 20.12,
+    "volume": 124,
+    "open_interest": 0
+  },
+  {
+    "strike": 400.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 924,
+    "open_interest": 0
+  },
+  {
+    "strike": 405.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 14.17,
+    "ask": 18.97,
+    "mid": 16.57,
+    "volume": 320,
+    "open_interest": 0
+  },
+  {
+    "strike": 405.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.06,
+    "ask": 0.01,
+    "mid": 0.034999999999999996,
+    "volume": 2651,
+    "open_interest": 0
+  },
+  {
+    "strike": 410.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 9.28,
+    "ask": 13.87,
+    "mid": 11.575,
+    "volume": 1265,
+    "open_interest": 0
+  },
+  {
+    "strike": 410.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.07,
+    "ask": 0.01,
+    "mid": 0.04,
+    "volume": 15142,
+    "open_interest": 0
+  },
+  {
+    "strike": 415.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 4.6,
+    "ask": 9.28,
+    "mid": 6.9399999999999995,
+    "volume": 2394,
+    "open_interest": 0
+  },
+  {
+    "strike": 415.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 0.52,
+    "ask": 0.01,
+    "mid": 0.265,
+    "volume": 46614,
+    "open_interest": 0
+  },
+  {
+    "strike": 420.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 1.53,
+    "ask": 9.6,
+    "mid": 5.5649999999999995,
+    "volume": 88818,
+    "open_interest": 0
+  },
+  {
+    "strike": 420.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 2.25,
+    "ask": 0.01,
+    "mid": 1.13,
+    "volume": 132781,
+    "open_interest": 0
+  },
+  {
+    "strike": 425.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 0.25,
+    "ask": 5.33,
+    "mid": 2.79,
+    "volume": 102670,
+    "open_interest": 0
+  },
+  {
+    "strike": 425.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 6.0,
+    "ask": 0.01,
+    "mid": 3.005,
+    "volume": 30406,
+    "open_interest": 0
+  },
+  {
+    "strike": 430.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 0.04,
+    "ask": 0.15,
+    "mid": 0.095,
+    "volume": 13109,
+    "open_interest": 0
+  },
+  {
+    "strike": 430.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 10.97,
+    "ask": 0.45,
+    "mid": 5.71,
+    "volume": 3442,
+    "open_interest": 0
+  },
+  {
+    "strike": 435.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 3152,
+    "open_interest": 0
+  },
+  {
+    "strike": 435.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 16.2,
+    "ask": 5.29,
+    "mid": 10.745,
+    "volume": 64,
+    "open_interest": 0
+  },
+  {
+    "strike": 440.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 991,
+    "open_interest": 0
+  },
+  {
+    "strike": 440.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 19.66,
+    "ask": 19.66,
+    "mid": 19.66,
+    "volume": 1,
+    "open_interest": 0
+  },
+  {
+    "strike": 445.0,
+    "right": "C",
+    "expiry": "20240425",
+    "bid": 0.01,
+    "ask": 0.01,
+    "mid": 0.01,
+    "volume": 25,
+    "open_interest": 0
+  },
+  {
+    "strike": 450.0,
+    "right": "P",
+    "expiry": "20240425",
+    "bid": 30.83,
+    "ask": 26.3,
+    "mid": 28.564999999999998,
+    "volume": 12,
+    "open_interest": 0
+  }
+]
